@@ -71,7 +71,7 @@ func postPemContent(filePath string) (string, error) {
 	}
 	fileContent := string(content)
 
-	cmd := exec.Command("curl", "-s", "-X", "POST", "http://pkimet.al/lintcert",
+	cmd := exec.Command("curl", "-s", "-X", "POST", "http://dev.pkimet.al/lintcert",
 		"-H", "Content-Type: application/x-www-form-urlencoded",
 		"--data-urlencode", fmt.Sprintf("b64input=%s", fileContent))
 
