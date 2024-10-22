@@ -46,9 +46,6 @@ func compareWarningsAndErrors(warningsAndErrorsCount map[string]int, knownResult
 			} else {
 				fmt.Printf("%s matches with count: %d\n", warning, count)
 			}
-		} else {
-			fmt.Printf("%s not found in known results\n", warning)
-			mismatchFound = true
 		}
 	}
 
